@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from '../../node_modules/rxjs';
 import * as _ from 'lodash';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 
 interface User {
   name: string,
@@ -32,7 +32,8 @@ export class AppComponent {
   ngOnInit() {
     this.users$ = this.http
       .get<User[]>(this.apiUrl).pipe(
-          map(data => _.values(data)
+          map(data => _.values(data),
+          tap(console.log)
         )
       );
   }
