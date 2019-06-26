@@ -1,4 +1,6 @@
-<div class="user-detailed-container">
+<div class="user-detailed-container"
+    (click)="handleUserDetailedClick()"
+>
     <p>{{ user.phone }}</p>
     <p>{{ user.website }}</p>
     <app-address

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { User } from '../../models/user'
 
 @Component({
@@ -8,4 +8,21 @@ import { User } from '../../models/user'
 
 export class UserDetailedComponent {
     @Input() user: User;
+    @Input() open: boolean = false;
+    @Output() openChange = new EventEmitter();
+
+    handleUserDetailedClick() {
+        this.open = !this.open;
+        this.openChange.emit(this.open);
+        console.log(this.open);
+    }
+
+    ngOnChanges() {
+        if (this.open) {
+
+        }
+        else {
+
+        }
+    }
 }
