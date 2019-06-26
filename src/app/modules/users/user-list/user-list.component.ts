@@ -14,6 +14,8 @@ export class UserListComponent implements OnInit {
     title = 'DSTest';
     private apiUrl = 'https://jsonplaceholder.typicode.com/users';
     users$: Observable<User[]>;
+    searchText: string;
+    noData;
   
     constructor(private http:HttpClient) {
       
