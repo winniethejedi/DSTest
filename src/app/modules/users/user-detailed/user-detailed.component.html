@@ -1,0 +1,12 @@
+<div class="user-detailed-container">
+    <p>{{ user.phone }}</p>
+    <p>{{ user.website }}</p>
+    <app-address
+    [address]="user.address"
+    >
+    </app-address>
+    <app-company
+    [company]="user.company"
+    >
+    </app-company>
+</div>
