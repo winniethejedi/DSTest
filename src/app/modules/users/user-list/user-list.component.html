@@ -1,6 +1,7 @@
 <h2>Users </h2>
+<input [(ngModel)]="searchText" placeholder="Search">
 <ul *ngIf="users$ | async as users else noData">
-  <app-user-basic *ngFor="let user of users"
+  <app-user-basic *ngFor="let user of users | filter : searchText"
     [user]="user"
   >
   </app-user-basic>
