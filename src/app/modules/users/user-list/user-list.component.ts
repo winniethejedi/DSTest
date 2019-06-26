@@ -3,17 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import * as _ from 'lodash';
 import { map, tap } from 'rxjs/operators';
-
-interface User {
-    name: string,
-    username: string,
-    email: string,
-    address: string,
-    phone: string,
-    website: string,
-    companyName: string,
-    companyBusinessStrategy: string
-  }
+import { User } from '../../models/user';
 
 @Component({
     selector: 'app-user-list',
