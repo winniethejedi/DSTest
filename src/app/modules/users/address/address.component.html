@@ -1,8 +1,27 @@
 <div class="address-container">
-    <p>{{ address.street }}</p>
-    <p>{{ address.suite }}</p>
-    <p>{{ address.city }}</p>
-    <p>{{ address.zipcode }}</p>
-    <p>{{ address.geo.lat }}</p>
-    <p>{{ address.geo.lng }}</p>
+    <h3>Address</h3>
+    <div class="label-container">
+        <label>Street:</label><p>{{ address.street }}</p>
+    </div>
+    <div class="label-container">
+        <label>Suite:</label><p>{{ address.suite }}</p>
+    </div>
+    <div class="label-container">
+        <label>City:</label><p>{{ address.city }}</p>
+    </div>
+    <div class="label-container">
+        <label>Zip Code:</label><p>{{ address.zipcode }}</p>
+    </div>
+    <div class="label-container">
+        <label>Latitude:</label><p>{{ address.geo.lat }}</p>
+    </div>
+    <div class="label-container">
+        <label>Longitude:</label><p>{{ address.geo.lng }}</p>
+    </div>
+
+    
+    
+    
+
+
 </div>

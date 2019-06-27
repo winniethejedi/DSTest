@@ -16,17 +16,17 @@ export class UserListComponent implements OnInit {
     users$: Observable<User[]>;
     searchText: string;
     noData;
-  
-    constructor(private http:HttpClient) {
-      
+
+    constructor(private http: HttpClient) {
+
     }
-  
+
     ngOnInit() {
-      this.users$ = this.http
-        .get<User[]>(this.apiUrl).pipe(
-            map(data => _.values(data),
-            tap(console.log)
-          )
-        );
+        this.users$ = this.http
+            .get<User[]>(this.apiUrl).pipe(
+                map(data => _.values(data),
+                    tap(console.log)
+                )
+            );
     }
 }

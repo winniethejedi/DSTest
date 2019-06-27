@@ -10,4 +10,12 @@ export class User {
     website: string;
     company: Company;
     address: Address;
+
+    // constructor() {
+    //     this.name = 'Craig Parker';
+    //     this.username = 'craigparker';
+    //     this.email = 'mcraigparker123@gmail.com';
+    //     this.phone = 'N/A';
+    //     this.website = 'https://craig-parker.firebaseapp.com';
+    // }
   }

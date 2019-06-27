@@ -1,8 +1,16 @@
 <div class="user-detailed-container"
     (click)="handleUserDetailedClick()"
 >
-    <p>{{ user.phone }}</p>
-    <p>{{ user.website }}</p>
+    <div class="personal-detailed-container">
+        <h3>Personal Info</h3>
+        <div class="label-container">
+                <label>Phone:</label><p>{{ user.phone }}</p>
+        </div>
+        <div class="label-container">
+            <label>Website:</label><p>{{ user.website }}</p>
+        </div>
+    </div>
+
     <app-address
     [address]="user.address"
     >
