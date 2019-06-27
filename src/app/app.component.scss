@@ -7,6 +7,10 @@
     border-width: 2px;
 }
 
+.user-basic-container {
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+}
+
 .user-basic-container:hover {
     background-color: aliceblue;
 }
@@ -53,4 +57,46 @@
 
 #user-list {
     padding-inline-start: 0px;
+}
+
+.user-detailed-section {
+    width: 30%;
+}
+
+.personal-detailed-container.user-detailed-section {
+    border-right: groove;
+}
+
+app-address.user-detailed-section {
+    border-right: groove;
+}
+
+#git-hub-image {
+    margin-bottom: 30px;
+}
+
+#portfolio-link {
+    text-decoration: none;
+}
+
+#portfolio-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .user-detailed-section {
+        width: 90%;
+    }
+
+    .personal-detailed-container.user-detailed-section {
+        border-right: none;
+    }
+    
+    app-address.user-detailed-section {
+        border-right: none;
+    }
+
+    #users-search-bar {
+        width: 70%;
+    }
 }

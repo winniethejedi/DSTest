@@ -1,7 +1,7 @@
 <div class="user-detailed-container"
     (click)="handleUserDetailedClick()"
 >
-    <div class="personal-detailed-container">
+    <div class="personal-detailed-container user-detailed-section">
         <h3>Personal Info</h3>
         <div class="label-container">
                 <label>Phone:</label><p>{{ user.phone }}</p>
@@ -12,11 +12,11 @@
     </div>
 
     <app-address
-    [address]="user.address"
+    [address]="user.address" class="user-detailed-section"
     >
     </app-address>
     <app-company
-    [company]="user.company"
+    [company]="user.company" class="user-detailed-section"
     >
     </app-company>
 </div>
