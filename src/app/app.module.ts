@@ -22,4 +22,5 @@ import { AppComponent } from './app.component';
   providers: [AppComponent],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

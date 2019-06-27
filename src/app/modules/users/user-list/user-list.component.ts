@@ -24,8 +24,7 @@ export class UserListComponent implements OnInit {
     ngOnInit() {
         this.users$ = this.http
             .get<User[]>(this.apiUrl).pipe(
-                map(data => _.values(data),
-                    tap(console.log)
+                map(data => _.values(data)
                 )
             );
     }

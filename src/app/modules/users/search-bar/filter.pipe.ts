@@ -15,7 +15,6 @@ export class FilterUserPipe implements PipeTransform {
             const matchesUsername = user.username.toLowerCase().includes(searchText);
             const matchesEmail = user.email.toLowerCase().includes(searchText);
             const match = matchesName || matchesUsername || matchesEmail;
-
             return match;
         });
     }

@@ -14,6 +14,5 @@ export class UserBasicComponent {
     handleUserBasicClick() {
         this.open = !this.open;
         this.openChange.emit(this.open);
-        console.log(this.open);
     }
 }

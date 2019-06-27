@@ -5,6 +5,6 @@
 
 <ul *ngIf="users$ | async as users else noData" id="user-list">
   <app-user-basic *ngFor="let user of users | filter : searchText" [user]="user">
-    >
+
   </app-user-basic>
 </ul>

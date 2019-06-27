@@ -1,22 +1,18 @@
-<div class="user-detailed-container"
-    (click)="handleUserDetailedClick()"
->
+<div class="user-detailed-container">
     <div class="personal-detailed-container user-detailed-section">
         <h3>Personal Info</h3>
         <div class="label-container">
-                <label>Phone:</label><p>{{ user.phone }}</p>
+            <label>Phone:</label>
+            <p>{{ user.phone }}</p>
         </div>
         <div class="label-container">
-            <label>Website:</label><p>{{ user.website }}</p>
+            <label>Website:</label>
+            <p>{{ user.website }}</p>
         </div>
     </div>
 
-    <app-address
-    [address]="user.address" class="user-detailed-section"
-    >
+    <app-address [address]="user.address" class="user-detailed-section">
     </app-address>
-    <app-company
-    [company]="user.company" class="user-detailed-section"
-    >
+    <app-company [company]="user.company" class="user-detailed-section">
     </app-company>
 </div>

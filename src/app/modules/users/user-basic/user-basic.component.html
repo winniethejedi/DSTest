@@ -1,19 +1,17 @@
-<div class="user-basic-container"
-    (click)="handleUserBasicClick()">
+<div class="user-basic-container" (click)="handleUserBasicClick()">
     <div class="label-container">
-        <label>Name:</label><p>{{ user.name }}</p>
+        <label>Name:</label>
+        <p>{{ user.name }}</p>
     </div>
     <div class="label-container">
-    <label>Username:</label><p>{{ user.username }}</p>
+        <label>Username:</label>
+        <p>{{ user.username }}</p>
     </div>
     <div class="label-container">
-        <label>Email:</label><p>{{ user.email }}</p>
+        <label>Email:</label>
+        <p>{{ user.email }}</p>
     </div>
-    
-    <app-user-detailed
-    [user]="user"
-    [open]="open"
-    [ngClass]="{'hidden': !open}"
-    >
+
+    <app-user-detailed [user]="user" [open]="open" [ngClass]="{'hidden': !open}">
     </app-user-detailed>
 </div>
