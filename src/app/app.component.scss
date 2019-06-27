@@ -1,10 +1,14 @@
 .user-detailed-container, .user-basic-container {
-    border: solid;
+    border-style: groove;
     margin: 10px;
     padding: 10px;
     cursor: pointer;
     border-radius: 5px;
     border-width: 2px;
+}
+
+.user-basic-container:hover {
+    background-color: aliceblue;
 }
 
 .hidden {
@@ -25,6 +29,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: -12px;
+    margin-top: 0px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 #users-search-bar {
@@ -41,4 +48,9 @@
 
 #users-search-bar:focus {
     outline: none;
+    border-color: lightblue;
+}
+
+#user-list {
+    padding-inline-start: 0px;
 }
